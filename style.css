@@ -232,7 +232,7 @@ body {
     border-radius: 20px;
   padding: 30px;
   border: 1px solid #333;
-    scroll-snap-align: start
+    scroll-snap-align: start;
     text-align: center;
   flex-shrink: 0;
   transition: transform 0.2s, box-shadow 0.2s;

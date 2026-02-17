@@ -228,11 +228,12 @@ body {
 .help-card {
   min-width: 280px;
   max-width: 350px;
-  background: #111111;
-  border-radius: 20px;
+  background: #1a1a1a;
+    border-radius: 20px;
   padding: 30px;
-  border: 1px solid #222222;
-  scroll-snap-align: start;
+  border: 1px solid #333;
+    scroll-snap-align: start
+    text-align: center;
   flex-shrink: 0;
   transition: transform 0.2s, box-shadow 0.2s;
 }

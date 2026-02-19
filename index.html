@@ -36,7 +36,8 @@
         .reveal { animation: fadeInUp 0.8s ease-out forwards; }
 
         section { padding: 120px 40px; position: relative; }
-        h2 { font-size: 2.8rem; text-align: center; margin-bottom: 60px; font-weight: 800; letter-spacing: -0.02em; }
+        h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 800; letter-spacing: -0.02em; }
+        .section-subtitle-main { text-align: center; color: var(--text-muted); margin-bottom: 60px; font-size: 1.1rem; }
 
         /* Header */
         .header { 
@@ -79,22 +80,36 @@
             font-size: 1.35rem; 
             color: #d1d5db; 
             max-width: 750px; 
-            margin-bottom: 25px;
+            margin-bottom: 35px;
             font-weight: 400;
         }
-        .hero-trust { 
-            font-size: 1rem !important; 
-            color: var(--text-muted) !important; 
+        .hero-pillars { 
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        .pillar-item {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .pillar-item::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 50%;
         }
 
         /* Stats Section */
         .section-stats { background: #000; }
         .stats-grid { 
             display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
             gap: 30px; 
             max-width: 1200px; 
             margin: 0 auto; 
@@ -128,12 +143,14 @@
             background: #111;
             border: 1px solid #222;
             position: relative;
+            width: 100%;
         }
         .why-photo img { width: 100%; height: 100%; object-fit: cover; }
         .photo-placeholder { 
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             color: #333; font-weight: 700; font-size: 1.2rem;
             display: flex; align-items: center; justify-content: center; 
+            text-align: center; padding: 20px;
         }
         .why-content h2 { text-align: left; margin-bottom: 30px; }
         .why-bullets { list-style: none; display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 40px; }
@@ -154,7 +171,7 @@
         .section-services { background: #000; }
         .services-grid { 
             display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
             gap: 30px; 
             max-width: 1200px; 
             margin: 0 auto; 
@@ -176,8 +193,7 @@
         .service-card-body p { color: #555; font-size: 1.05rem; }
 
         /* Testimonials */
-        .section-testimonials { background: #000; padding: 120px 0; }
-        .section-subtitle { text-align: center; color: var(--text-muted); margin-top: -45px; margin-bottom: 60px; font-size: 1.2rem; }
+        .section-testimonials { background: #000; padding: 120px 0; overflow: hidden; }
         .testimonials-container { 
             display: flex; 
             gap: 25px; 
@@ -188,7 +204,8 @@
         }
         .testimonials-container::-webkit-scrollbar { display: none; }
         .testimonial-card { 
-            min-width: 400px; 
+            width: 450px; 
+            min-width: 320px;
             background: var(--accent); 
             border: 1px solid var(--border); 
             border-radius: 28px; 
@@ -198,8 +215,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            white-space: normal;
         }
-        .testimonial-quote { font-size: 1.15rem; font-style: italic; color: #eee; margin-bottom: 30px; line-height: 1.8; }
+        .testimonial-quote { font-size: 1.15rem; font-style: italic; color: #eee; margin-bottom: 30px; line-height: 1.8; word-wrap: break-word; }
         .testimonial-author { display: flex; align-items: center; gap: 15px; }
         .author-avatar { width: 50px; height: 50px; border-radius: 50%; background: #222; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; }
         .author-info h4 { font-size: 1.1rem; font-weight: 700; }
@@ -257,12 +275,15 @@
 
         /* Mobile Adjustments */
         @media (max-width: 1024px) {
-            .stats-grid, .services-grid, .why-container, .contact-footer-inner { grid-template-columns: 1fr; gap: 50px; }
-            .section-hero { text-align: center; }
-            .section-hero h1 { font-size: 3rem; }
+            .why-container, .contact-footer-inner { grid-template-columns: 1fr; gap: 60px; }
+            .section-hero { text-align: center; align-items: center; }
+            .section-hero h1 { font-size: 2.8rem; }
+            .hero-pillars { justify-content: center; }
             .why-photo { max-width: 500px; margin: 0 auto; }
-            .testimonial-card { min-width: 320px; padding: 30px; }
-            section { padding: 80px 24px; }
+            .why-content h2 { text-align: center; }
+            .testimonial-card { width: 85vw; padding: 35px; }
+            section { padding: 100px 24px; }
+            h2 { font-size: 2.2rem; }
         }
     </style>
 </head>
@@ -276,15 +297,17 @@
     <section class="section-hero reveal">
         <h1>Science-Backed Fitness,<br>Made Personal in Gurugram</h1>
         <p>Elite 1-on-1 coaching for high-performers, couples, and seniors who value sustainable health over quick fixes.</p>
-        <div class="hero-trust">
-            <span>🏆 10+ Years Expertise</span>
-            <span>⭐ 4.9/5 Google Rating</span>
+        <div class="hero-pillars">
+            <div class="pillar-item">Personal</div>
+            <div class="pillar-item">Challenging</div>
+            <div class="pillar-item">Habit Changing</div>
         </div>
     </section>
 
     <!-- 2. STATS -->
     <section class="section-stats reveal">
         <h2>Unmatched Track Record.</h2>
+        <p class="section-subtitle-main">Proven results across professional and residential sectors of Gurugram.</p>
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-value">100+</div>
@@ -324,6 +347,7 @@
     <!-- 4. SERVICES -->
     <section class="section-services reveal" id="services">
         <h2>Core Disciplines</h2>
+        <p class="section-subtitle-main">Tailored training frameworks designed for your specific physiological needs.</p>
         <div class="services-grid">
             <article class="service-card">
                 <div class="service-img">
@@ -358,7 +382,7 @@
     <!-- 5. TESTIMONIALS -->
     <section class="section-testimonials reveal">
         <h2>Client Feedback</h2>
-        <p class="section-subtitle">Real words from real people in Gurugram</p>
+        <p class="section-subtitle-main">Real words from real people in Gurugram.</p>
         <div class="testimonials-container">
             <article class="testimonial-card">
                 <p class="testimonial-quote">"Narender doesn't sugarcoat anything. He explains the science behind every move, which keeps me consistent."</p>
@@ -423,12 +447,5 @@
         <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Book Your Consultation</button>
     </div>
 
-    <!-- 
-        IMAGE ASSET SPECIFICATIONS (FOR USER REFERENCE):
-        1. Hero Background: images/hero-bg.jpg | 1920x1080px | ~300KB (Portrait of trainer in gym or texture)
-        2. Profile Photo: images/profile.jpg | 800x1000px | ~200KB (Clean, professional shot)
-        3. Service Images: images/service-*.jpg | 800x500px | ~150KB (Action shots of training)
-        Use .webp or optimized .jpg for fast loading.
-    -->
 </body>
 </html>

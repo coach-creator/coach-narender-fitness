@@ -7,7 +7,6 @@
   --border-color: #e5edee;
   --text-dark: #111827;
   --text-muted: #4b6e70;
-  /* Gradient matching visiting card: deep teal bottom-left to lighter teal top-right */
   --teal-gradient: linear-gradient(135deg, #1C5F62 0%, #267F7F 60%, #2d9090 100%);
   --teal-gradient-header: linear-gradient(135deg, #1a5558 0%, #216F71 100%);
 }
@@ -26,7 +25,7 @@ section { padding: 120px 40px; }
 h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 800; color: var(--teal-dark); }
 .section-subtitle-main { text-align: center; color: var(--text-muted); margin-bottom: 60px; font-size: 1.1rem; }
 
-/* Header - gradient like visiting card */
+/* Header */
 .header {
   padding: 25px 40px;
   background: var(--teal-gradient-header);
@@ -106,7 +105,7 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
 }
 .why-photo img {
   width: 100%;
-  max-width: 420px;
+  max-width: 580px;
   height: auto;
   object-fit: contain;
   display: block;
@@ -136,7 +135,7 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
 }
 .why-bullets li::before { content: "\2713"; color: var(--teal-mid); font-weight: 900; font-size: 1.1rem; }
 
-/* Services - diagonal gradient like visiting card */
+/* Services */
 .section-services { background: var(--teal-gradient); }
 .section-services h2 { color: #fff; }
 .section-services .section-subtitle-main { color: rgba(255,255,255,0.75); }
@@ -188,7 +187,7 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
 }
 .author-info h4 { color: var(--teal-dark); }
 
-/* Footer - diagonal gradient like visiting card */
+/* Footer */
 .section-contact-footer {
   background: var(--teal-gradient);
   color: #fff;
@@ -199,7 +198,7 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
 .social-link { color: #fff; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.3); margin-right: 20px; }
 .contact-item { color: #fff; margin-bottom: 20px; display: flex; align-items: center; gap: 15px; }
 
-/* CTA Bar - gradient pill button */
+/* CTA Bar */
 .cta-bar { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 1000; }
 .cta-button {
   background: var(--teal-gradient);
@@ -230,7 +229,7 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
   .section-hero { text-align: center; align-items: center; }
   .section-hero h1 { font-size: 2.8rem; }
   .hero-pillars { justify-content: center; }
-  .why-photo img { max-width: 340px; }
+  .why-photo img { max-width: 460px; }
 }
 
 /* Responsive - Mobile */
@@ -242,13 +241,8 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .why-photo {
-    justify-content: center;
-  }
-  .why-photo img {
-    max-width: 65%;
-    margin: 0 auto;
-  }
+  .why-photo { justify-content: center; }
+  .why-photo img { max-width: 65%; margin: 0 auto; }
   .why-content p { font-size: 1rem; }
   .why-bullets li { padding: 14px 18px; font-size: 0.95rem; }
   .section-hero h1 { font-size: 2.2rem; }

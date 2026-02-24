@@ -259,8 +259,7 @@ h2 {
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
@@ -453,8 +452,8 @@ h2 {
     font-size: 2rem;
   }
   .section-hero {
-    background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.2) 0%, rgba(248, 250, 252, 0.05) 100%), url('1111.png');
-    background-position: center center !important;
+    background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.3) 0%, rgba(248, 250, 252, 0.05) 100%), url('1111.png');
+    background-position: 80% center !important;
     background-size: cover !important;
     text-align: center;
     align-items: center;

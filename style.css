@@ -62,15 +62,67 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
 
 /* Stats */
 .section-stats { background: var(--neutral-grey); }
-.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
-.stat-card { background: #fff; border: 1px solid var(--border-color); border-radius: 24px; padding: 50px 30px; text-align: center; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.stat-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 50px 30px;
+  text-align: center;
+}
 .stat-value { font-size: 3.5rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 10px; }
 .stat-label { color: var(--text-muted); font-size: 1.1rem; text-transform: uppercase; }
 
-/* Why Train */
-.section-why { background: #fff; }
-.why-container { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; max-width: 1200px; margin: 0 auto; align-items: center; }
-.why-photo { border-radius: 32px; aspect-ratio: 4/5; background: var(--neutral-grey); border: 1px solid var(--border-color); overflow: hidden; }
+/* Why Train - title above, image left, bullets right */
+.section-why {
+  background: #fff;
+  padding-bottom: 80px;
+}
+.why-title {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 800;
+  color: var(--teal-dark);
+  margin-bottom: 60px;
+}
+.why-container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+.why-photo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.why-photo img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 16px;
+}
+.why-content p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+.why-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .why-bullets li {
   padding: 18px 24px;
   background: var(--neutral-grey);
@@ -80,16 +132,30 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
   gap: 15px;
   margin-bottom: 15px;
   color: var(--text-dark);
-  list-style: none;
+  font-size: 1rem;
 }
-.why-bullets li::before { content: "✓"; color: var(--teal-mid); font-weight: 900; }
+.why-bullets li::before { content: "\2713"; color: var(--teal-mid); font-weight: 900; font-size: 1.1rem; }
 
 /* Services - diagonal gradient like visiting card */
 .section-services { background: var(--teal-gradient); }
 .section-services h2 { color: #fff; }
 .section-services .section-subtitle-main { color: rgba(255,255,255,0.75); }
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
-.service-card { background: #fff; color: var(--text-dark); border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.3s ease; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.service-card {
+  background: #fff;
+  color: var(--text-dark);
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
 .service-card:hover { transform: translateY(-10px); }
 .service-img { height: 260px; background: var(--neutral-grey); }
 .service-card-body { padding: 40px; }
@@ -99,7 +165,8 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
 /* Testimonials */
 .section-testimonials { background: #fff; padding: 120px 0; }
 .testimonial-card {
-  width: 450px; min-width: 320px;
+  width: 450px;
+  min-width: 320px;
   background: #fff;
   border: 1px solid var(--border-color);
   border-top: 4px solid var(--teal-mid);
@@ -108,7 +175,17 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
   flex-shrink: 0;
 }
 .testimonial-quote { color: var(--text-dark); font-style: italic; margin-bottom: 30px; }
-.author-avatar { background: var(--teal-mid); color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+.author-avatar {
+  background: var(--teal-mid);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
 .author-info h4 { color: var(--teal-dark); }
 
 /* Footer - diagonal gradient like visiting card */
@@ -139,13 +216,45 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
 .cta-button:hover { transform: scale(1.05); box-shadow: 0 14px 36px rgba(28, 95, 98, 0.5); }
 
 /* Animations */
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 .reveal { animation: fadeInUp 0.8s ease-out forwards; }
 .testimonials-container { display: flex; gap: 25px; overflow-x: auto; padding: 0 40px 40px; scrollbar-width: none; }
 
+/* Responsive - Tablet */
 @media (max-width: 1024px) {
-  .why-container, .contact-footer-inner { grid-template-columns: 1fr; gap: 60px; }
+  .why-container,
+  .contact-footer-inner { grid-template-columns: 1fr; gap: 60px; }
   .section-hero { text-align: center; align-items: center; }
   .section-hero h1 { font-size: 2.8rem; }
   .hero-pillars { justify-content: center; }
+  .why-photo img { max-width: 340px; }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 640px) {
+  section { padding: 80px 20px; }
+  h2 { font-size: 2rem; }
+  .why-title { font-size: 2rem; margin-bottom: 40px; }
+  .why-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .why-photo {
+    justify-content: center;
+  }
+  .why-photo img {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+  .why-content p { font-size: 1rem; }
+  .why-bullets li { padding: 14px 18px; font-size: 0.95rem; }
+  .section-hero h1 { font-size: 2.2rem; }
+  .stat-card { padding: 35px 20px; }
+  .stat-value { font-size: 2.8rem; }
+  .testimonial-card { width: 85vw; min-width: 260px; padding: 30px; }
+  .cta-button { padding: 16px 36px; font-size: 0.95rem; }
+  .section-contact-footer { padding: 70px 20px; }
 }

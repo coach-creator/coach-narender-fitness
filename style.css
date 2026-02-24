@@ -428,7 +428,7 @@ h2 {
   .section-hero {
     text-align: center;
     align-items: center;
-    background-position: 70% center;
+    background-position: center center;
   }
   .section-hero h1 {
     font-size: 2.8rem;
@@ -454,14 +454,14 @@ h2 {
     font-size: 2rem;
   }
   .section-hero {
-    background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.7) 0%, rgba(248, 250, 252, 0.45) 50%, rgba(248, 250, 252, 0.2) 100%), url('1111.png');
-    background-position: 50% center;
+    background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.4) 0%, rgba(248, 250, 252, 0.1) 100%), url('1111.png');
+    background-position: center center;
+    background-size: cover;
     text-align: center;
     align-items: center;
   }
   .why-title {
-    font-size: 2rem;
-    margin-bottom: 40px;
+    font-size: 2rem; margin-bottom: 40px;
   }
   .why-container {
     grid-template-columns: 1fr;

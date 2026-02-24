@@ -35,7 +35,12 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
 /* Hero */
 .section-hero {
   min-height: 95vh;
-  background: var(--bg-light);
+  background-image:
+    linear-gradient(to right, rgba(251,252,251,0.95) 40%, rgba(251,252,251,0.5) 70%, rgba(251,252,251,0.05) 100%),
+    url('1111.png');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +96,6 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
   margin: 0 auto;
   align-items: center;
 }
-/* Photo column: image + badge stacked */
 .why-photo-col {
   display: flex;
   flex-direction: column;
@@ -109,12 +113,11 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 15%;
   display: block;
   transform: scale(1.15);
-  transform-origin: center 30%;
+  transform-origin: center 20%;
 }
-/* Name badge */
 .why-badge {
   width: 100%;
   background: var(--teal-gradient);
@@ -236,22 +239,31 @@ h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; font-weight: 80
 @media (max-width: 900px) {
   .why-container,
   .contact-footer-inner { grid-template-columns: 1fr; gap: 40px; }
-  .section-hero { text-align: center; align-items: center; }
+  .section-hero {
+    text-align: center;
+    align-items: center;
+    background-position: center right;
+  }
   .section-hero h1 { font-size: 2.8rem; }
   .hero-pillars { justify-content: center; }
-  .why-photo { height: 380px; }
+  .why-photo { height: 400px; }
+  .why-photo-col { max-width: 420px; margin: 0 auto; }
 }
 /* Responsive - Mobile */
 @media (max-width: 640px) {
   section { padding: 80px 20px; }
   h2 { font-size: 2rem; }
-  .why-title { font-size: 2rem; margin-bottom: 40px; }
-  .why-container {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .section-hero {
+    background-image:
+      linear-gradient(to bottom, rgba(251,252,251,0.88) 0%, rgba(251,252,251,0.75) 100%),
+      url('1111.png');
+    background-position: center center;
   }
+  .why-title { font-size: 2rem; margin-bottom: 40px; }
+  .why-container { grid-template-columns: 1fr; gap: 30px; }
   .why-photo { height: 300px; }
-  .why-photo-col { max-width: 340px; margin: 0 auto; }
+  .why-photo img { transform: none; object-position: center 10%; }
+  .why-photo-col { max-width: 320px; margin: 0 auto; }
   .why-content p { font-size: 1rem; }
   .why-bullets li { padding: 14px 18px; font-size: 0.95rem; }
   .section-hero h1 { font-size: 2.2rem; }

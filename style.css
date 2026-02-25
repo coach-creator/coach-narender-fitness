@@ -103,7 +103,8 @@ h2 {
 
 .pillar-item {
   display: flex;
-  align-items: center; gap: 10px;
+  align-items: center;
+  gap: 10px;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--teal);
@@ -259,7 +260,8 @@ h2 {
 }
 
 .services-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
@@ -327,11 +329,10 @@ h2 {
 .author-avatar {
   background: var(--teal-mid);
   color: #fff;
-  width: 50px; height: 50px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   font-weight: 700;
 }
 
@@ -346,6 +347,14 @@ h2 {
   padding: 100px 40px;
 }
 
+.contact-footer-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .footer-logo {
   color: #fff;
   font-size: 1.8rem;
@@ -355,21 +364,55 @@ h2 {
 
 .footer-tagline {
   color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 35px;
+  max-width: 400px;
 }
 
-.social-link {
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon-link {
   color: #fff;
-  text-decoration: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-  margin-right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.social-icon-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-right h3 {
+  font-size: 1.6rem;
+  margin-bottom: 35px;
 }
 
 .contact-item {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
+  font-size: 1.05rem;
+}
+
+.footer-email-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+.footer-email-link:hover {
+  border-bottom-color: #fff;
 }
 
 /* CTA Bar */
@@ -428,80 +471,33 @@ h2 {
     align-items: center;
     background-position: center center !important;
   }
-  .section-hero h1 {
-    font-size: 2.8rem;
-  }
-  .hero-pillars {
-    justify-content: center;
-  }
-  .why-photo {
-    height: 400px;
-  }
-  .why-photo-col {
-    max-width: 420px;
-    margin: 0 auto;
-  }
+  .section-hero h1 { font-size: 2.8rem; }
+  .hero-pillars { justify-content: center; }
+  .why-photo { height: 400px; }
+  .why-photo-col { max-width: 420px; margin: 0 auto; }
 }
 
 /* Responsive - Mobile */
 @media (max-width: 640px) {
-  section {
-    padding: 80px 20px;
-  }
-  h2 {
-    font-size: 2rem;
-  }
+  section { padding: 80px 20px; }
+  h2 { font-size: 2rem; }
   .section-hero {
     background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.3) 0%, rgba(248, 250, 252, 0.05) 100%), url('1111.png');
     background-position: 80% center !important;
     background-size: cover !important;
-    text-align: center;
-    align-items: center;
+    text-align: center; align-items: center;
   }
-  .why-title {
-    font-size: 2rem; margin-bottom: 40px;
-  }
-  .why-container {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  .why-photo {
-    height: 300px;
-  }
-  .why-photo img {
-    transform: none;
-    object-position: center 10%;
-  }
-  .why-photo-col {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-  .why-content p {
-    font-size: 1rem;
-  }
-  .why-bullets li {
-    padding: 14px 18px;
-    font-size: 0.95rem;
-  }
-  .section-hero h1 {
-    font-size: 2.2rem;
-  }
-  .stat-card {
-    padding: 35px 20px;
-  }
-  .stat-value {
-    font-size: 2.8rem;
-  }
-  .testimonial-card {
-    width: 85vw;
-    min-width: 260px;
-    padding: 30px;
-  }
-  .cta-button {
-    padding: 16px 36px;
-    font-size: 0.95rem;
-  }
-  .section-contact-footer {
-    padding: 70px 20px;
-  }
+  .why-title { font-size: 2rem; margin-bottom: 40px; }
+  .why-container { grid-template-columns: 1fr; gap: 30px; }
+  .why-photo { height: 300px; }
+  .why-photo img { transform: none; object-position: center 10%; }
+  .why-photo-col { max-width: 320px; margin: 0 auto; }
+  .why-content p { font-size: 1rem; }
+  .why-bullets li { padding: 14px 18px; font-size: 0.95rem; }
+  .section-hero h1 { font-size: 2.2rem; }
+  .stat-card { padding: 35px 20px; }
+  .stat-value { font-size: 2.8rem; }
+  .testimonial-card { width: 85vw; min-width: 260px; padding: 30px; }
+  .cta-button { padding: 16px 36px; font-size: 0.95rem; }
+  .section-contact-footer { padding: 70px 20px; }
 }

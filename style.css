@@ -30,7 +30,7 @@ img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
-.narrow { max-width: 760px; }
+.narrow > * { max-width: 760px; }
 
 h1, h2, h3 { line-height: 1.15; color: var(--ink); letter-spacing: -0.01em; }
 h1 { font-size: clamp(2.3rem, 5vw, 3.6rem); font-weight: 700; }
@@ -104,7 +104,7 @@ p + p { margin-top: 16px; }
 
 /* Reviews */
 .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.review { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+.review { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; justify-content: flex-start; gap: 16px; }
 .review p { font-size: 1rem; }
 .review footer { font-weight: 600; font-size: 0.92rem; color: var(--muted); }
 
@@ -135,13 +135,13 @@ details p { color: var(--muted); margin-top: 10px; }
 
 /* Footer */
 .site-footer { background: var(--ink); color: #9aa39e; border-top: 1px solid rgba(246, 242, 234, 0.08); padding: 28px 0; font-size: 0.92rem; }
-.footer-inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .footer-inner nav { display: flex; gap: 20px; }
 .footer-inner a { text-decoration: none; }
 .footer-inner a:hover { color: var(--paper); }
 
 /* Privacy page */
-.policy { padding-top: 64px; padding-bottom: 88px; }
+main.policy { padding-top: 64px; padding-bottom: 88px; }
 .policy h1 { font-size: 2.2rem; margin-bottom: 8px; }
 .policy h2 { font-size: 1.3rem; margin: 32px 0 8px; }
 .policy li { margin: 0 0 8px 20px; }
@@ -291,4 +291,106 @@ summary { min-height: 44px; align-items: center; }
 }
 @media (max-width: 480px) {
   .carousel, .carousel-mobile { margin-right: -16px; padding-right: 16px; }
+}
+
+/* Icons */
+.icon { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
+.icon-google { fill: #4285F4; }
+.icon-linkedin { fill: #0A66C2; }
+.icon-facebook { fill: #0866FF; }
+.stars { display: inline-flex; gap: 1px; vertical-align: -2px; }
+.star { width: 15px; height: 15px; fill: #F4B400; }
+.btn { display: inline-flex; align-items: center; gap: 10px; }
+.btn .icon { width: 20px; height: 20px; }
+
+/* Trust strip */
+.trust { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 28px 0; }
+.trust-inner { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+.trust-rating { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+.trust-rating .icon-google { width: 32px; height: 32px; }
+.trust-rating-text strong, .trust-stat strong { font-size: 1.5rem; font-weight: 700; color: var(--ink); margin-right: 6px; }
+.trust-sub { display: block; font-size: 0.88rem; color: var(--muted); line-height: 1.3; }
+.trust-stat { padding-left: 40px; border-left: 1px solid var(--line); }
+.trust-certs { margin-left: auto; display: flex; align-items: center; gap: 18px; }
+.trust-label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); white-space: nowrap; }
+.trust-logos { display: flex; align-items: center; gap: 22px; }
+.trust-logos img { height: 36px; width: auto; }
+.trust-logos img[alt="K11 School of Fitness Sciences"] { height: 30px; }
+
+/* Google badge in reviews */
+.google-badge { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; }
+.google-badge .icon-google { width: 22px; height: 22px; }
+.google-badge strong { color: var(--ink); }
+
+/* Follow chips */
+.follow { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.follow > span { color: var(--muted); font-size: 0.98rem; margin-right: 4px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 44px; padding: 0 16px !important;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--paper); color: var(--ink) !important; text-decoration: none;
+  font-weight: 600; font-size: 0.95rem;
+}
+.chip:hover { border-color: var(--ink); }
+
+/* Certificates */
+.creds { border-left: none; padding-left: 0; }
+.certs { list-style: none; display: grid; gap: 14px; }
+.cert { display: flex; gap: 16px; align-items: center; padding: 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+.cert-thumb { flex-shrink: 0; width: 84px; height: 84px; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--white); cursor: zoom-in; }
+.cert-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.cert-logo { height: 22px; width: auto; margin-bottom: 6px; }
+.cert-title { font-weight: 600; color: var(--ink); font-size: 0.98rem; line-height: 1.35; }
+.cert-issuer { font-size: 0.88rem; color: var(--muted); margin-top: 2px !important; line-height: 1.4; }
+.cert-note { font-size: 0.85rem; color: var(--muted); margin-top: 12px; }
+.creds li.cert, .creds li.cert:last-child { padding: 12px; border: 1px solid var(--line); color: inherit; font-size: 1rem; }
+
+/* Certificate viewer */
+.cert-dialog { border: none; border-radius: 12px; padding: 0; max-width: min(92vw, 760px); max-height: 90vh; background: var(--white); }
+.cert-dialog::backdrop { background: rgba(20, 32, 28, 0.75); }
+.cert-dialog img { display: block; max-width: 100%; max-height: 90vh; width: auto; margin: 0 auto; }
+.cert-close { position: absolute; top: 8px; right: 8px; width: 44px; height: 44px; border-radius: 50%; border: none; background: rgba(20, 32, 28, 0.85); color: var(--paper); font-size: 1.5rem; cursor: pointer; }
+
+/* Footer icons */
+.footer-inner nav a { gap: 8px; }
+.footer-inner nav .icon { width: 16px; height: 16px; }
+
+@media (max-width: 900px) {
+  .hero { padding-bottom: 32px; }
+  .trust-inner { gap: 20px 28px; }
+  .trust-stat { padding-left: 28px; }
+  .trust-certs { margin-left: 0; flex-direction: column; align-items: flex-start; gap: 10px; width: 100%; }
+  .trust-logos { flex-wrap: wrap; gap: 18px; }
+}
+@media (max-width: 480px) {
+  .trust-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .trust-rating { grid-column: 1 / -1; }
+  .trust-stat { padding-left: 0; border-left: none; }
+  .trust-certs { grid-column: 1 / -1; }
+  .trust-logos img { height: 30px; }
+  .trust-logos img[alt="K11 School of Fitness Sciences"] { height: 24px; }
+}
+
+/* Trust strip balance (desktop) */
+.trust-inner { flex-wrap: nowrap; gap: 32px; }
+.trust-stat { padding-left: 32px; }
+.trust-certs { flex-direction: column; align-items: flex-start; gap: 8px; padding-left: 32px; border-left: 1px solid var(--line); }
+.trust-logos { gap: 20px; }
+.trust-logos img { height: 34px; }
+.trust-logos img[alt="K11 School of Fitness Sciences"] { height: 24px; }
+@media (max-width: 1100px) {
+  .trust-inner { flex-wrap: wrap; }
+  .trust-certs { margin-left: 0; padding-left: 0; border-left: none; width: 100%; }
+}
+@media (max-width: 480px) {
+  .trust-logos img { height: 28px; }
+  .trust-logos img[alt="K11 School of Fitness Sciences"] { height: 20px; }
+}
+
+/* Fixes: footer links wrap on phones; centre the certificate viewer */
+.footer-inner nav { flex-wrap: wrap; gap: 0 20px; }
+.cert-dialog { margin: auto; }
+@media (max-width: 480px) {
+  .trust-stat { padding-left: 0; border-left: none; }
 }

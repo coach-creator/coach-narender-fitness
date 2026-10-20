@@ -215,3 +215,11 @@ summary { min-height: 44px; align-items: center; }
   .label-long { display: none; }
   .label-short { display: inline; }
 }
+
+/* Inline link tap targets (Instinct round 2, N1 and N2) */
+.follow a, .book-note a, .policy a[href^="mailto"] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 2px;
+}

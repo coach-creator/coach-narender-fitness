@@ -94,8 +94,16 @@
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="btn btn-small" href="#book">Book an assessment</a>
+      <a class="btn btn-small" href="#book"><span class="label-long">Book an assessment</span><span class="label-short">Book</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
     </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Sections" hidden>
+      <a href="#method">Method</a>
+      <a href="#stories">Client stories</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </nav>
   </header>
 
   <main>
@@ -187,7 +195,7 @@
     <section class="section" id="reviews">
       <div class="wrap">
         <h2>What clients say</h2>
-        <p class="section-intro">From Google reviews.</p>
+        <p class="section-intro">Rated 4.9 from 13 Google reviews. <a href="https://share.google/NFR8CL5bRm24Yvz0A" target="_blank" rel="noopener">See all reviews on Google</a></p>
         <div class="reviews">
           <blockquote class="review">
             <p>“He is an amazing strength training coach. He focused on proper technique and explains exercise very clearly. He helped me strengthen my back as well when I was having issues of disc bulge.”</p>
@@ -230,6 +238,7 @@
             <li>Fitness Trainer, NSQF Level 4, Skill India</li>
             <li>Sports &amp; Exercise Nutrition, Prehab 121 Academy</li>
           </ul>
+          <p class="follow">Follow Narender on <a href="https://www.linkedin.com/in/narender-s-97bb28377/" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://www.facebook.com/profile.php?id=61595692166065" target="_blank" rel="noopener">Facebook</a></p>
         </div>
       </div>
     </section>
@@ -264,7 +273,7 @@
           <a class="btn" href="https://wa.me/919311381774?text=Hi%20Narender%2C%20I%27d%20like%20to%20book%20an%20assessment." target="_blank" rel="noopener">Message on WhatsApp</a>
           <a class="btn btn-ghost-light" href="tel:+919311381774">Call +91 93113 81774</a>
         </div>
-        <p class="book-note">Or email <a href="mailto:mail.coachnarender@gmail.com">mail.coachnarender@gmail.com</a></p>
+        <p class="book-note">Or email <a href="mailto:mail.coachnarender@gmail.com?subject=Assessment%20enquiry">mail.coachnarender@gmail.com</a></p>
       </div>
     </section>
   </main>
@@ -279,5 +288,19 @@
       </nav>
     </div>
   </footer>
+  <script>
+    (function () {
+      var btn = document.querySelector('.menu-toggle');
+      var nav = document.getElementById('mobile-nav');
+      if (!btn || !nav) return;
+      function setOpen(open) {
+        btn.setAttribute('aria-expanded', String(open));
+        btn.textContent = open ? 'Close' : 'Menu';
+        nav.hidden = !open;
+      }
+      btn.addEventListener('click', function () { setOpen(nav.hidden); });
+      nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') setOpen(false); });
+    })();
+  </script>
 </body>
 </html>

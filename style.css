@@ -223,3 +223,72 @@ summary { min-height: 44px; align-items: center; }
   min-height: 44px;
   padding: 0 2px;
 }
+
+/* Horizontal carousels */
+.section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; }
+.carousel-nav { display: flex; gap: 10px; margin-bottom: 36px; flex-shrink: 0; }
+.carousel-nav.is-idle { visibility: hidden; }
+.carousel-btn {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, opacity 0.15s;
+}
+.carousel-btn:hover:not(:disabled) { background: var(--ink); color: var(--paper); }
+.carousel-btn:disabled { opacity: 0.3; cursor: default; }
+.mobile-only { display: none; }
+
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 40px) / 3);
+  grid-template-columns: none;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+.carousel::-webkit-scrollbar, .carousel-mobile::-webkit-scrollbar { display: none; }
+.carousel > *, .carousel-mobile > * { scroll-snap-align: start; }
+.carousel:focus-visible, .carousel-mobile:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; border-radius: 8px; }
+
+.facts a { text-decoration: none; color: inherit; }
+.facts a:hover strong { color: var(--gold-text); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@media (max-width: 900px) {
+  .carousel { grid-auto-columns: 82%; }
+  .carousel-mobile {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 82%;
+    grid-template-columns: none;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+  .steps.carousel-mobile { grid-auto-columns: 70%; }
+  .mobile-only { display: flex; }
+  .carousel-nav { margin-bottom: 28px; }
+}
+@media (max-width: 900px) {
+  .section-head { flex-direction: column; align-items: stretch; gap: 0; }
+  .section-head .section-intro { margin-bottom: 16px; }
+  .carousel-nav { justify-content: flex-end; margin-bottom: 16px; }
+  .carousel, .carousel-mobile { margin-right: -24px; padding-right: 24px; scroll-padding-left: 0; }
+}
+@media (max-width: 480px) {
+  .carousel, .carousel-mobile { margin-right: -16px; padding-right: 16px; }
+}

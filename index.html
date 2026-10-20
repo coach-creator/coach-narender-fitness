@@ -120,6 +120,7 @@
           <ul class="facts" aria-label="Experience">
             <li><strong>8+</strong> years coaching</li>
             <li><strong>200+</strong> clients</li>
+            <li><a href="#reviews"><strong>4.9</strong> on Google</a></li>
             <li>K11-certified · Sports nutrition</li>
           </ul>
         </div>
@@ -143,7 +144,7 @@
     <section class="section" id="method">
       <div class="wrap">
         <h2>How I coach</h2>
-        <ol class="steps">
+        <ol class="steps carousel-mobile" id="steps-track" tabindex="0" aria-label="Coaching steps, scroll sideways on phones">
           <li>
             <h3>Assessment first</h3>
             <p>Your goals, past injuries, medicines, stress, how you move, and how many days you can really train.</p>
@@ -170,9 +171,17 @@
 
     <section class="section alt" id="stories">
       <div class="wrap">
-        <h2>Client stories</h2>
-        <p class="section-intro">Three clients, shared with their permission. Names kept private.</p>
-        <div class="stories">
+        <div class="section-head">
+          <div>
+            <h2>Client stories</h2>
+            <p class="section-intro">Three clients, shared with their permission. Names kept private.</p>
+          </div>
+          <div class="carousel-nav mobile-only" data-for="stories-track">
+            <button type="button" class="carousel-btn" data-dir="-1" aria-label="Previous story">&#8592;</button>
+            <button type="button" class="carousel-btn" data-dir="1" aria-label="Next story">&#8594;</button>
+          </div>
+        </div>
+        <div class="stories carousel-mobile" id="stories-track" tabindex="0" aria-label="Client stories, scroll sideways on phones">
           <article class="story">
             <p class="story-tag">Disc bulge</p>
             <h3>From "don't bend" to squats and jogging</h3>
@@ -194,9 +203,17 @@
 
     <section class="section" id="reviews">
       <div class="wrap">
-        <h2>What clients say</h2>
-        <p class="section-intro">Rated 4.9 from 13 Google reviews. <a href="https://share.google/NFR8CL5bRm24Yvz0A" target="_blank" rel="noopener">See all reviews on Google</a></p>
-        <div class="reviews">
+        <div class="section-head">
+          <div>
+            <h2>What clients say</h2>
+            <p class="section-intro">Rated 4.9 from 13 Google reviews. <a href="https://share.google/NFR8CL5bRm24Yvz0A" target="_blank" rel="noopener">See all reviews on Google</a></p>
+          </div>
+          <div class="carousel-nav" data-for="reviews-track">
+            <button type="button" class="carousel-btn" data-dir="-1" aria-label="Previous reviews">&#8592;</button>
+            <button type="button" class="carousel-btn" data-dir="1" aria-label="Next reviews">&#8594;</button>
+          </div>
+        </div>
+        <div class="reviews carousel" id="reviews-track" tabindex="0" aria-label="Client reviews, scroll sideways">
           <blockquote class="review">
             <p>“He is an amazing strength training coach. He focused on proper technique and explains exercise very clearly. He helped me strengthen my back as well when I was having issues of disc bulge.”</p>
             <footer>Tarannum T.</footer>
@@ -300,6 +317,33 @@
       }
       btn.addEventListener('click', function () { setOpen(nav.hidden); });
       nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') setOpen(false); });
+    })();
+  </script>
+  <script>
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      document.querySelectorAll('.carousel-nav').forEach(function (nav) {
+        var track = document.getElementById(nav.getAttribute('data-for'));
+        if (!track) return;
+        var buttons = nav.querySelectorAll('.carousel-btn');
+        function update() {
+          var max = track.scrollWidth - track.clientWidth;
+          var scrollable = max > 4;
+          nav.classList.toggle('is-idle', !scrollable);
+          buttons[0].disabled = !scrollable || track.scrollLeft <= 4;
+          buttons[1].disabled = !scrollable || track.scrollLeft >= max - 4;
+        }
+        buttons.forEach(function (b) {
+          b.addEventListener('click', function () {
+            var card = track.firstElementChild;
+            var step = card ? card.getBoundingClientRect().width + 20 : track.clientWidth;
+            track.scrollBy({ left: step * Number(b.getAttribute('data-dir')), behavior: reduce ? 'auto' : 'smooth' });
+          });
+        });
+        track.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        update();
+      });
     })();
   </script>
 </body>

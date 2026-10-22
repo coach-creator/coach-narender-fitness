@@ -368,7 +368,7 @@
           <div class="hp" aria-hidden="true"><label for="f-website">Leave this empty</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
           <button class="btn btn-submit" type="submit">Book my assessment</button>
           <p class="form-status" role="status" aria-live="polite"></p>
-          <p class="form-note">Narender will get in touch to fix a time. Your details are used only for this. <a href="privacy.html">Privacy</a></p>
+          <p class="form-note">Our team will contact you shortly to fix a time. Your details are used only for this. <a href="privacy.html">Privacy</a></p>
         </form>
         <div class="book-alt">
           <span>Prefer to talk now?</span>
@@ -429,7 +429,7 @@
         fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', body: body })
           .then(function () {
             form.reset();
-            show('Thank you, ' + name.split(' ')[0] + '. Narender will get in touch with you soon.', true);
+            show('Thank you, ' + name.split(' ')[0] + '. Our team will contact you shortly.', true);
             if (window.gtag) gtag('event', 'generate_lead', { method: 'booking_form' });
           })
           .catch(function () {

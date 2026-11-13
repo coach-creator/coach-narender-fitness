@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <clipPath id="sky"><rect x="580" y="110" width="440" height="420"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" fill="#f6f2ea"/>
+  <rect y="650" width="1600" height="250" fill="#a9bfb6"/>
+  <!-- window with sunrise -->
+  <rect x="560" y="90" width="480" height="460" fill="#6f8f84"/>
+  <g clip-path="url(#sky)">
+    <rect x="580" y="110" width="440" height="420" fill="#a9bfb6"/>
+    <circle cx="820" cy="470" r="86" fill="#fbf8f2"/>
+    <path d="M580 530 L580 476 Q680 438 790 486 Q900 530 1020 462 L1020 530 Z" fill="#6f8f84"/>
+  </g>
+  <rect x="790" y="110" width="20" height="420" fill="#6f8f84"/>
+  <rect x="580" y="310" width="440" height="20" fill="#6f8f84"/>
+  <rect x="540" y="550" width="520" height="16" fill="#e2dccf"/>
+  <!-- mat -->
+  <polygon points="470,740 1170,740 1230,830 420,830" fill="#6f8f84"/>
+  <!-- sunlight on floor and mat -->
+  <polygon points="616,668 784,668 930,880 720,880" fill="#fbf8f2" fill-opacity="0.6"/>
+  <polygon points="816,668 1000,668 1180,880 950,880" fill="#fbf8f2" fill-opacity="0.6"/>
+  <!-- water bottle -->
+  <polygon points="1260,758 1310,758 1420,792 1360,792" fill="#6f8f84"/>
+  <rect x="1260" y="640" width="50" height="120" rx="12" fill="#1c2d27"/>
+  <rect x="1272" y="620" width="26" height="24" fill="#1c2d27"/>
+  <rect x="1270" y="604" width="30" height="20" rx="4" fill="#c4623d"/>
+</svg>

@@ -1,0 +1,33 @@
+name: Publish blog
+
+# Runs every day at 12:00 PM IST (06:30 UTC). Builds every post whose publish_date
+# is today or earlier, then commits the generated pages. GitHub may start a
+# scheduled run a few minutes late.
+on:
+  schedule:
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-blog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build blog
+        run: python3 tools/build_blog.py --out .
+      - name: Commit generated pages
+        run: |
+          git config user.name "blog-publisher"
+          git config user.email "blog-publisher@users.noreply.github.com"
+          git add -A blog sitemap.xml
+          if git diff --cached --quiet; then echo "nothing new today"; else git commit -m "Publish blog posts for $(date -u +%F) [skip ci]" && git push; fi

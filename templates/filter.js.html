@@ -1,0 +1,29 @@
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.filter-chip');
+    var cards = document.querySelectorAll('.post-card');
+    var note = document.querySelector('.filter-empty');
+    if (!buttons.length || !cards.length) return;
+    function apply(type) {
+      var shown = 0;
+      cards.forEach(function (card) {
+        var on = type === 'all' || card.getAttribute('data-type') === type;
+        card.hidden = !on;
+        if (on) shown += 1;
+      });
+      buttons.forEach(function (button) {
+        var on = button.getAttribute('data-type') === type;
+        button.classList.toggle('is-on', on);
+        button.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      if (note) note.hidden = shown !== 0;
+    }
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var type = button.getAttribute('data-type');
+        if (button.classList.contains('is-on') && type !== 'all') type = 'all';
+        apply(type);
+      });
+    });
+  })();
+</script>

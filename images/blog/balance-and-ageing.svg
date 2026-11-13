@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f6f2ea"/>
+  <rect y="700" width="1600" height="200" fill="#a9bfb6"/>
+  <rect y="692" width="1600" height="8" fill="#e2dccf"/>
+  <!-- window -->
+  <rect x="180" y="140" width="240" height="360" fill="#6f8f84"/>
+  <rect x="198" y="158" width="94" height="160" fill="#fbf8f2"/>
+  <rect x="308" y="158" width="94" height="160" fill="#fbf8f2"/>
+  <rect x="198" y="334" width="94" height="148" fill="#fbf8f2"/>
+  <rect x="308" y="334" width="94" height="148" fill="#fbf8f2"/>
+  <!-- light on floor -->
+  <polygon points="250,716 330,716 450,880 340,880" fill="#fbf8f2"/>
+  <polygon points="346,716 426,716 572,880 466,880" fill="#fbf8f2"/>
+  <!-- staircase -->
+  <polygon points="700,700 700,640 790,640 790,580 880,580 880,520 970,520 970,460 1060,460 1060,400 1150,400 1150,340 1240,340 1240,280 1600,280 1600,700" fill="#6f8f84"/>
+  <g fill="#a9bfb6">
+    <rect x="700" y="640" width="90" height="8"/>
+    <rect x="790" y="580" width="90" height="8"/>
+    <rect x="880" y="520" width="90" height="8"/>
+    <rect x="970" y="460" width="90" height="8"/>
+    <rect x="1060" y="400" width="90" height="8"/>
+    <rect x="1150" y="340" width="90" height="8"/>
+    <rect x="1240" y="280" width="360" height="8"/>
+  </g>
+  <polygon points="700,716 1600,716 1600,760 790,760" fill="#6f8f84"/>
+  <!-- handrail -->
+  <g fill="#1c2d27">
+    <rect x="800" y="478" width="6" height="102"/>
+    <rect x="890" y="420" width="6" height="100"/>
+    <rect x="980" y="362" width="6" height="98"/>
+    <rect x="1070" y="304" width="6" height="96"/>
+    <rect x="1160" y="246" width="6" height="94"/>
+  </g>
+  <polygon points="690,548 1250,188 1250,204 690,564" fill="#14201c"/>
+  <rect x="690" y="540" width="22" height="160" fill="#14201c"/>
+  <circle cx="701" cy="536" r="14" fill="#c4623d"/>
+  <!-- shoes -->
+  <path d="M460 702 L460 668 Q460 656 472 656 L506 656 Q516 656 524 664 L550 684 Q566 692 566 702 Z" fill="#1c2d27"/>
+  <rect x="458" y="698" width="110" height="8" rx="4" fill="#fbf8f2"/>
+  <path d="M580 702 L580 668 Q580 656 592 656 L626 656 Q636 656 644 664 L670 684 Q686 692 686 702 Z" fill="#1c2d27"/>
+  <rect x="578" y="698" width="110" height="8" rx="4" fill="#fbf8f2"/>
+  <!-- plant -->
+  <ellipse cx="100" cy="560" rx="15" ry="64" fill="#1c2d27"/>
+  <ellipse cx="74" cy="592" rx="13" ry="50" fill="#6f8f84" transform="rotate(-30 74 592)"/>
+  <ellipse cx="128" cy="590" rx="13" ry="52" fill="#1c2d27" transform="rotate(28 128 590)"/>
+  <polygon points="70,706 130,706 142,630 58,630" fill="#1c2d27"/>
+</svg>

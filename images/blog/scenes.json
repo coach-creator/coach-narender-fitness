@@ -1,0 +1,39 @@
+{
+  "scenes": {
+    "desk-and-back": { "file": "desk-and-back.svg", "alt": "Flat illustration of a quiet home office with a desk, an open laptop and a chair with a small cushion at the lower back" },
+    "neck-and-laptop": { "file": "neck-and-laptop.svg", "alt": "Flat illustration of a laptop raised on a stand to eye level on a table, with a mug and a bright window" },
+    "hips-and-driving": { "file": "hips-and-driving.svg", "alt": "Flat side view of an empty car seat and steering wheel above a road line" },
+    "sleep-and-stress": { "file": "sleep-and-stress.svg", "alt": "Flat illustration of a calm bedroom at night with a made bed, a lit bedside lamp and a moon in the window" },
+    "strength-at-home": { "file": "strength-at-home.svg", "alt": "Flat illustration of a simple home workout corner with a bench, dumbbells on a mat, a small kettlebell and a plant by a tall window" },
+    "energy-and-recovery": { "file": "energy-and-recovery.svg", "alt": "Flat illustration of sunrise light falling through a window onto an exercise mat, with a water bottle nearby" },
+    "food-and-protein": { "file": "food-and-protein.svg", "alt": "Flat illustration of a table with a bowl, an egg, a glass of water and a few vegetables" },
+    "schedule-and-habits": { "file": "schedule-and-habits.svg", "alt": "Flat illustration of a blank wall calendar with one day marked, a desk clock and a coffee cup" },
+    "balance-and-ageing": { "file": "balance-and-ageing.svg", "alt": "Flat illustration of a staircase with a handrail, a pair of shoes at the bottom and a plant by the window" },
+    "mindset-and-progress": { "file": "mindset-and-progress.svg", "alt": "Flat illustration of stepping stones leading to an open, light filled doorway, with a small plant beside it" }
+  },
+  "types": {
+    "pain-and-posture": "desk-and-back",
+    "why-you-fall-off": "mindset-and-progress",
+    "science-made-simple": "strength-at-home",
+    "fits-your-calendar": "schedule-and-habits"
+  },
+  "posts": {
+    "lower-back-pain-desk-job": "desk-and-back",
+    "sitting-all-day-but-working-out-one-hour": "desk-and-back",
+    "neck-pain-from-laptop-work": "neck-and-laptop",
+    "tight-hips-from-sitting-and-driving": "hips-and-driving",
+    "working-out-when-sleep-deprived-and-stressed": "sleep-and-stress",
+    "strength-training-for-busy-professionals": "strength-at-home",
+    "mobility-before-heavy-lifting": "strength-at-home",
+    "dizzy-or-exhausted-when-starting-a-workout": "energy-and-recovery",
+    "winded-climbing-stairs-after-35": "energy-and-recovery",
+    "does-sweating-mean-a-good-workout": "energy-and-recovery",
+    "sweat-is-not-proof-of-a-good-workout": "energy-and-recovery",
+    "protein-for-people-who-sit-all-day": "food-and-protein",
+    "how-to-schedule-workouts-with-a-busy-calendar": "schedule-and-habits",
+    "strength-training-to-prevent-falls-and-fractures": "balance-and-ageing",
+    "why-fitness-plans-fail-for-busy-people": "mindset-and-progress",
+    "why-generic-workout-plans-fail": "mindset-and-progress",
+    "realistic-body-transformation-after-35": "mindset-and-progress"
+  }
+}

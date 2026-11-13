@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f6f2ea"/>
+  <rect y="700" width="1600" height="200" fill="#a9bfb6"/>
+  <!-- road line -->
+  <rect x="40" y="826" width="140" height="12" rx="6" fill="#fbf8f2"/>
+  <rect x="300" y="826" width="140" height="12" rx="6" fill="#fbf8f2"/>
+  <rect x="560" y="826" width="140" height="12" rx="6" fill="#fbf8f2"/>
+  <rect x="820" y="826" width="140" height="12" rx="6" fill="#fbf8f2"/>
+  <rect x="1080" y="826" width="140" height="12" rx="6" fill="#fbf8f2"/>
+  <rect x="1340" y="826" width="140" height="12" rx="6" fill="#fbf8f2"/>
+  <!-- shadow under car -->
+  <polygon points="360,716 1330,716 1440,764 470,764" fill="#6f8f84"/>
+  <!-- side window and roof -->
+  <polygon points="430,252 1086,252 1250,430 430,430" fill="#a9bfb6"/>
+  <polygon points="420,236 1094,236 1280,432 1256,432 1080,252 420,252" fill="#1c2d27"/>
+  <rect x="406" y="236" width="24" height="380" fill="#1c2d27"/>
+  <rect x="830" y="252" width="22" height="178" fill="#1c2d27"/>
+  <!-- dashboard -->
+  <polygon points="1010,452 1236,424 1300,470 1300,606 1060,606" fill="#1c2d27"/>
+  <!-- steering column and wheel -->
+  <polygon points="926,404 1090,466 1086,484 922,420" fill="#14201c"/>
+  <ellipse cx="920" cy="410" rx="15" ry="74" fill="#14201c" transform="rotate(-22 920 410)"/>
+  <!-- seat -->
+  <polygon points="520,296 584,290 612,540 552,560" fill="#1c2d27"/>
+  <rect x="502" y="242" width="74" height="52" rx="20" fill="#1c2d27" transform="rotate(-8 539 268)"/>
+  <polygon points="556,522 770,508 784,560 560,582" fill="#1c2d27"/>
+  <rect x="594" y="576" width="150" height="26" fill="#14201c"/>
+  <!-- hip cushion (accent) -->
+  <ellipse cx="590" cy="500" rx="15" ry="34" fill="#c4623d" transform="rotate(-8 590 500)"/>
+  <!-- body sill and wheels -->
+  <rect x="360" y="600" width="960" height="60" rx="26" fill="#14201c"/>
+  <circle cx="480" cy="662" r="58" fill="#14201c"/>
+  <circle cx="480" cy="662" r="22" fill="#6f8f84"/>
+  <circle cx="1180" cy="662" r="58" fill="#14201c"/>
+  <circle cx="1180" cy="662" r="22" fill="#6f8f84"/>
+</svg>

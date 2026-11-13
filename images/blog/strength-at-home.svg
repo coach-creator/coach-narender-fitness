@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f6f2ea"/>
+  <rect y="640" width="1600" height="260" fill="#a9bfb6"/>
+  <!-- right wall with tall window -->
+  <rect x="1180" y="0" width="420" height="640" fill="#6f8f84"/>
+  <rect x="1260" y="90" width="240" height="470" fill="#fbf8f2"/>
+  <rect x="1374" y="90" width="12" height="470" fill="#6f8f84"/>
+  <rect x="1260" y="310" width="240" height="12" fill="#6f8f84"/>
+  <!-- light on floor -->
+  <polygon points="1010,664 1118,664 990,880 830,880" fill="#fbf8f2"/>
+  <polygon points="1132,664 1240,664 1150,880 1006,880" fill="#fbf8f2"/>
+  <!-- shadows -->
+  <polygon points="420,712 760,712 640,758 290,758" fill="#6f8f84"/>
+  <polygon points="874,716 926,716 860,742 806,742" fill="#6f8f84"/>
+  <polygon points="96,700 164,700 92,730 20,730" fill="#6f8f84"/>
+  <!-- bench -->
+  <rect x="380" y="560" width="420" height="26" rx="6" fill="#14201c"/>
+  <rect x="420" y="586" width="18" height="122" fill="#14201c"/>
+  <rect x="742" y="586" width="18" height="122" fill="#14201c"/>
+  <rect x="405" y="702" width="48" height="10" rx="3" fill="#14201c"/>
+  <rect x="727" y="702" width="48" height="10" rx="3" fill="#14201c"/>
+  <!-- mat -->
+  <polygon points="200,772 820,772 790,850 160,850" fill="#6f8f84"/>
+  <!-- dumbbells -->
+  <rect x="320" y="802" width="80" height="8" fill="#14201c"/>
+  <rect x="300" y="788" width="24" height="36" rx="6" fill="#1c2d27"/>
+  <rect x="396" y="788" width="24" height="36" rx="6" fill="#1c2d27"/>
+  <rect x="490" y="802" width="80" height="8" fill="#14201c"/>
+  <rect x="470" y="788" width="24" height="36" rx="6" fill="#1c2d27"/>
+  <rect x="566" y="788" width="24" height="36" rx="6" fill="#1c2d27"/>
+  <!-- small kettlebell (accent) -->
+  <path d="M876 670 a24 24 0 0 1 48 0 h-10 a14 14 0 0 0 -28 0 z" fill="#c4623d"/>
+  <rect x="872" y="676" width="56" height="42" rx="20" fill="#c4623d"/>
+  <!-- plant -->
+  <ellipse cx="130" cy="520" rx="18" ry="74" fill="#1c2d27"/>
+  <ellipse cx="100" cy="556" rx="15" ry="58" fill="#6f8f84" transform="rotate(-30 100 556)"/>
+  <ellipse cx="162" cy="552" rx="15" ry="60" fill="#1c2d27" transform="rotate(28 162 552)"/>
+  <ellipse cx="96" cy="604" rx="12" ry="40" fill="#1c2d27" transform="rotate(-58 96 604)"/>
+  <polygon points="96,700 164,700 176,610 84,610" fill="#1c2d27"/>
+</svg>

@@ -1,0 +1,24 @@
+<script>
+(function () {
+  var links = [].slice.call(document.querySelectorAll(".toc-rail a, .toc-fold a"));
+  if (!links.length || !("IntersectionObserver" in window)) return;
+  var seen = {}, heads = [];
+  links.forEach(function (a) {
+    var id = decodeURIComponent(a.getAttribute("href").slice(1));
+    var h = document.getElementById(id);
+    if (h && !seen[id]) { seen[id] = 1; heads.push(h); }
+  });
+  function update() {
+    var line = innerHeight * 0.3, current = "";
+    heads.forEach(function (h) { if (h.getBoundingClientRect().top <= line) current = h.id; });
+    links.forEach(function (a) {
+      var on = current && a.getAttribute("href") === "#" + current;
+      a.classList.toggle("is-current", !!on);
+      if (on) a.setAttribute("aria-current", "location"); else a.removeAttribute("aria-current");
+    });
+  }
+  var io = new IntersectionObserver(update, { rootMargin: "0px 0px -70% 0px" });
+  heads.forEach(function (h) { io.observe(h); });
+  update();
+})();
+</script>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#1c2d27"/>
+  <rect y="680" width="1600" height="220" fill="#14201c"/>
+  <!-- window with night sky -->
+  <rect x="170" y="110" width="360" height="380" fill="#6f8f84"/>
+  <rect x="190" y="130" width="150" height="170" fill="#14201c"/>
+  <rect x="360" y="130" width="150" height="170" fill="#14201c"/>
+  <rect x="190" y="320" width="150" height="150" fill="#14201c"/>
+  <rect x="360" y="320" width="150" height="150" fill="#14201c"/>
+  <circle cx="440" cy="206" r="34" fill="#fbf8f2"/>
+  <circle cx="456" cy="194" r="30" fill="#14201c"/>
+  <circle cx="236" cy="172" r="3" fill="#fbf8f2"/>
+  <circle cx="300" cy="244" r="2.5" fill="#fbf8f2"/>
+  <circle cx="232" cy="410" r="2.5" fill="#fbf8f2"/>
+  <circle cx="470" cy="404" r="3" fill="#fbf8f2"/>
+  <circle cx="404" cy="282" r="2" fill="#fbf8f2"/>
+  <circle cx="300" cy="360" r="2" fill="#fbf8f2"/>
+  <!-- moonlight on floor -->
+  <polygon points="250,700 352,700 470,880 330,880" fill="#1c2d27"/>
+  <polygon points="372,700 480,700 640,880 494,880" fill="#1c2d27"/>
+  <!-- bed -->
+  <rect x="1080" y="400" width="36" height="290" rx="12" fill="#6f8f84"/>
+  <rect x="460" y="610" width="16" height="80" fill="#6f8f84"/>
+  <rect x="1040" y="610" width="16" height="80" fill="#6f8f84"/>
+  <rect x="440" y="580" width="640" height="36" fill="#6f8f84"/>
+  <rect x="450" y="540" width="620" height="44" rx="10" fill="#f6f2ea"/>
+  <rect x="916" y="500" width="152" height="46" rx="22" fill="#fbf8f2"/>
+  <rect x="428" y="520" width="500" height="88" rx="20" fill="#a9bfb6"/>
+  <!-- lamp light (flat) -->
+  <polygon points="1212,390 1258,390 1300,300 1170,300" fill="#f6f2ea" fill-opacity="0.08"/>
+  <polygon points="1196,440 1274,440 1340,540 1130,540" fill="#f6f2ea" fill-opacity="0.12"/>
+  <!-- bedside table -->
+  <rect x="1150" y="540" width="170" height="16" fill="#6f8f84"/>
+  <rect x="1160" y="556" width="150" height="100" fill="#6f8f84"/>
+  <rect x="1172" y="598" width="126" height="5" fill="#1c2d27"/>
+  <rect x="1166" y="656" width="14" height="34" fill="#6f8f84"/>
+  <rect x="1290" y="656" width="14" height="34" fill="#6f8f84"/>
+  <!-- lamp -->
+  <rect x="1210" y="528" width="50" height="12" rx="6" fill="#a9bfb6"/>
+  <rect x="1231" y="436" width="8" height="94" fill="#a9bfb6"/>
+  <polygon points="1196,440 1274,440 1258,390 1212,390" fill="#c4623d"/>
+</svg>

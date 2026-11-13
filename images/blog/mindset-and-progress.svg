@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f6f2ea"/>
+  <rect y="650" width="1600" height="250" fill="#a9bfb6"/>
+  <rect y="642" width="1600" height="8" fill="#e2dccf"/>
+  <!-- doorway -->
+  <rect x="962" y="162" width="296" height="488" fill="#6f8f84"/>
+  <rect x="980" y="180" width="260" height="470" fill="#fbf8f2"/>
+  <polygon points="1240,180 1330,150 1330,690 1240,650" fill="#1c2d27"/>
+  <circle cx="1314" cy="430" r="7" fill="#a9bfb6"/>
+  <!-- light spilling out -->
+  <polygon points="980,650 1240,650 1330,780 880,780" fill="#fbf8f2"/>
+  <!-- stepping stones -->
+  <ellipse cx="300" cy="846" rx="116" ry="28" fill="#6f8f84"/>
+  <ellipse cx="500" cy="784" rx="94" ry="22" fill="#6f8f84"/>
+  <ellipse cx="676" cy="738" rx="76" ry="18" fill="#6f8f84"/>
+  <ellipse cx="822" cy="704" rx="62" ry="15" fill="#6f8f84"/>
+  <ellipse cx="944" cy="680" rx="50" ry="12" fill="#6f8f84"/>
+  <ellipse cx="1050" cy="662" rx="40" ry="9" fill="#6f8f84"/>
+  <!-- plant -->
+  <ellipse cx="880" cy="530" rx="12" ry="48" fill="#1c2d27"/>
+  <ellipse cx="860" cy="552" rx="10" ry="38" fill="#6f8f84" transform="rotate(-30 860 552)"/>
+  <ellipse cx="900" cy="552" rx="10" ry="38" fill="#1c2d27" transform="rotate(30 900 552)"/>
+  <polygon points="862,646 898,646 906,586 854,586" fill="#c4623d"/>
+</svg>

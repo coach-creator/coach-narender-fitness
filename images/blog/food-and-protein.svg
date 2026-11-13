@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f6f2ea"/>
+  <rect y="760" width="1600" height="140" fill="#a9bfb6"/>
+  <!-- window behind table -->
+  <rect x="380" y="110" width="840" height="430" fill="#6f8f84"/>
+  <rect x="400" y="130" width="254" height="410" fill="#a9bfb6"/>
+  <rect x="673" y="130" width="254" height="410" fill="#a9bfb6"/>
+  <rect x="946" y="130" width="254" height="410" fill="#a9bfb6"/>
+  <!-- shadow under table -->
+  <polygon points="240,790 1360,790 1460,830 340,830" fill="#6f8f84"/>
+  <!-- table -->
+  <rect x="200" y="560" width="1200" height="24" fill="#14201c"/>
+  <rect x="240" y="584" width="16" height="206" fill="#14201c"/>
+  <rect x="1344" y="584" width="16" height="206" fill="#14201c"/>
+  <!-- broccoli -->
+  <rect x="448" y="506" width="14" height="54" fill="#6f8f84"/>
+  <circle cx="430" cy="500" r="22" fill="#1c2d27"/>
+  <circle cx="456" cy="484" r="25" fill="#1c2d27"/>
+  <circle cx="482" cy="503" r="20" fill="#1c2d27"/>
+  <!-- bowl -->
+  <circle cx="610" cy="492" r="14" fill="#1c2d27"/>
+  <circle cx="644" cy="486" r="16" fill="#6f8f84"/>
+  <circle cx="676" cy="494" r="13" fill="#1c2d27"/>
+  <ellipse cx="640" cy="500" rx="120" ry="12" fill="#e2dccf"/>
+  <path d="M520 500 A120 60 0 0 0 760 500 Z" fill="#fbf8f2"/>
+  <rect x="604" y="552" width="72" height="8" fill="#fbf8f2"/>
+  <!-- egg -->
+  <ellipse cx="850" cy="528" rx="24" ry="32" fill="#fbf8f2"/>
+  <!-- glass of water -->
+  <polygon points="958,430 1032,430 1022,560 968,560" fill="#fbf8f2"/>
+  <polygon points="962,482 1028,482 1022,560 968,560" fill="#6f8f84"/>
+  <!-- tomato (accent) -->
+  <circle cx="1120" cy="538" r="22" fill="#c4623d"/>
+  <ellipse cx="1120" cy="516" rx="10" ry="4" fill="#1c2d27"/>
+  <!-- cucumber -->
+  <rect x="1166" y="540" width="150" height="20" rx="10" fill="#1c2d27"/>
+</svg>

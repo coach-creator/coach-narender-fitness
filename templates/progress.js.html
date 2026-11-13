@@ -1,0 +1,10 @@
+<script>
+(function () {
+  var b = document.getElementById("reading-bar"), r = document.documentElement;
+  if (!b || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  addEventListener("scroll", function () {
+    var m = r.scrollHeight - r.clientHeight;
+    b.style.transform = "scaleX(" + (m ? r.scrollTop / m : 0) + ")";
+  }, { passive: true });
+})();
+</script>

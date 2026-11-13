@@ -5,8 +5,6 @@ description: Does sweating mean a good workout? No. Sweat shows your body is coo
 keyword: does sweating mean a good workout
 type: science-made-simple
 publish_date: 2026-11-13
-image: /images/steps/step-3.webp
-image_alt: One hand gripping a kettlebell on a wooden floor. The question is, does sweating mean a good workout.
 medical_line: true
 draft: false
 faq:

@@ -1,15 +1,45 @@
 {
   "scenes": {
-    "desk-and-back": { "file": "desk-and-back.svg", "alt": "Flat illustration of a quiet home office with a desk, an open laptop and a chair with a small cushion at the lower back" },
-    "neck-and-laptop": { "file": "neck-and-laptop.svg", "alt": "Flat illustration of a laptop raised on a stand to eye level on a table, with a mug and a bright window" },
-    "hips-and-driving": { "file": "hips-and-driving.svg", "alt": "Flat side view of an empty car seat and steering wheel above a road line" },
-    "sleep-and-stress": { "file": "sleep-and-stress.svg", "alt": "Flat illustration of a calm bedroom at night with a made bed, a lit bedside lamp and a moon in the window" },
-    "strength-at-home": { "file": "strength-at-home.svg", "alt": "Flat illustration of a simple home workout corner with a bench, dumbbells on a mat, a small kettlebell and a plant by a tall window" },
-    "energy-and-recovery": { "file": "energy-and-recovery.svg", "alt": "Flat illustration of sunrise light falling through a window onto an exercise mat, with a water bottle nearby" },
-    "food-and-protein": { "file": "food-and-protein.svg", "alt": "Flat illustration of a table with a bowl, an egg, a glass of water and a few vegetables" },
-    "schedule-and-habits": { "file": "schedule-and-habits.svg", "alt": "Flat illustration of a blank wall calendar with one day marked, a desk clock and a coffee cup" },
-    "balance-and-ageing": { "file": "balance-and-ageing.svg", "alt": "Flat illustration of a staircase with a handrail, a pair of shoes at the bottom and a plant by the window" },
-    "mindset-and-progress": { "file": "mindset-and-progress.svg", "alt": "Flat illustration of stepping stones leading to an open, light filled doorway, with a small plant beside it" }
+    "desk-and-back": {
+      "file": "desk-and-back.svg",
+      "alt": "Flat illustration of a quiet home office with a desk, an open laptop and a chair with a small cushion at the lower back"
+    },
+    "neck-and-laptop": {
+      "file": "neck-and-laptop.svg",
+      "alt": "Flat illustration of a laptop raised on a stand to eye level on a table, with a mug and a bright window"
+    },
+    "hips-and-driving": {
+      "file": "hips-and-driving.svg",
+      "alt": "Flat side view of an empty car seat and steering wheel above a road line"
+    },
+    "sleep-and-stress": {
+      "file": "sleep-and-stress.svg",
+      "alt": "Flat illustration of a calm bedroom at night with a made bed, a lit bedside lamp and a moon in the window"
+    },
+    "strength-at-home": {
+      "file": "strength-at-home.svg",
+      "alt": "Flat illustration of a simple home workout corner with a bench, dumbbells on a mat, a small kettlebell and a plant by a tall window"
+    },
+    "energy-and-recovery": {
+      "file": "energy-and-recovery.svg",
+      "alt": "Flat illustration of sunrise light falling through a window onto an exercise mat, with a water bottle nearby"
+    },
+    "food-and-protein": {
+      "file": "food-and-protein.svg",
+      "alt": "Flat illustration of a table with a bowl, an egg, a glass of water and a few vegetables"
+    },
+    "schedule-and-habits": {
+      "file": "schedule-and-habits.svg",
+      "alt": "Flat illustration of a blank wall calendar with one day marked, a desk clock and a coffee cup"
+    },
+    "balance-and-ageing": {
+      "file": "balance-and-ageing.svg",
+      "alt": "Flat illustration of a staircase with a handrail, a pair of shoes at the bottom and a plant by the window"
+    },
+    "mindset-and-progress": {
+      "file": "mindset-and-progress.svg",
+      "alt": "Flat illustration of stepping stones leading to an open, light filled doorway, with a small plant beside it"
+    }
   },
   "types": {
     "pain-and-posture": "desk-and-back",
@@ -34,6 +64,41 @@
     "strength-training-to-prevent-falls-and-fractures": "balance-and-ageing",
     "why-fitness-plans-fail-for-busy-people": "mindset-and-progress",
     "why-generic-workout-plans-fail": "mindset-and-progress",
-    "realistic-body-transformation-after-35": "mindset-and-progress"
+    "realistic-body-transformation-after-35": "mindset-and-progress",
+    "alcohol-and-workout-recovery-after-35": "sleep-and-stress",
+    "ankle-mobility-for-deep-squats": "strength-at-home",
+    "beat-afternoon-slump-without-coffee": "food-and-protein",
+    "belly-fat-after-35-desk-job": "food-and-protein",
+    "best-training-style-after-40": "balance-and-ageing",
+    "dehydration-in-air-conditioned-office": "food-and-protein",
+    "dumbbell-workout-in-apartment-india": "strength-at-home",
+    "exercise-snacks-during-workday-sitting": "desk-and-back",
+    "exercising-for-maintenance-after-35": "mindset-and-progress",
+    "fasted-vs-fed-morning-strength-workout": "food-and-protein",
+    "foam-rolling-for-tight-muscles": "energy-and-recovery",
+    "glute-activation-exercises-desk-job": "hips-and-driving",
+    "gym-anxiety-starting-fitness-at-40": "mindset-and-progress",
+    "healthy-indian-evening-snacks-weight-loss": "food-and-protein",
+    "high-protein-office-lunch-ordering-india": "food-and-protein",
+    "hotel-room-workout-no-equipment": "schedule-and-habits",
+    "how-to-restart-working-out-safely": "mindset-and-progress",
+    "how-to-start-lifting-at-40": "strength-at-home",
+    "how-to-stick-to-fitness-advice": "mindset-and-progress",
+    "improve-grip-strength-after-40": "balance-and-ageing",
+    "late-night-dinner-weight-gain-india": "food-and-protein",
+    "living-room-strength-workout-at-home": "strength-at-home",
+    "make-time-for-fitness-and-family": "schedule-and-habits",
+    "morning-vs-evening-workout-desk-job": "schedule-and-habits",
+    "natural-vs-steroid-body-transformation-myths": "mindset-and-progress",
+    "reduce-muscle-soreness-after-workout": "energy-and-recovery",
+    "staying-consistent-with-slow-fitness-progress": "mindset-and-progress",
+    "strength-vs-cardio-after-35": "strength-at-home",
+    "too-exhausted-after-personal-trainer-session": "energy-and-recovery",
+    "twice-a-week-strength-training-results": "strength-at-home",
+    "walking-after-meals-blood-sugar": "schedule-and-habits",
+    "weekend-workout-routine-busy-professionals": "schedule-and-habits",
+    "why-ask-trainer-purpose-of-exercise": "strength-at-home",
+    "working-out-with-jet-lag": "sleep-and-stress",
+    "workout-recovery-time-after-40": "energy-and-recovery"
   }
 }

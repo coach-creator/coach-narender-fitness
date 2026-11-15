@@ -1,11 +1,14 @@
 name: Publish blog
 
-# Runs every day at 12:00 PM IST (06:30 UTC). Builds every post whose publish_date
+# Runs every day at 12:00 PM IST (06:30 UTC), with backup runs because GitHub often starts scheduled jobs late. A repeat run with nothing new does nothing. Builds every post whose publish_date
 # is today or earlier, then commits the generated pages. GitHub may start a
 # scheduled run a few minutes late.
 on:
   schedule:
     - cron: "30 6 * * *"
+    - cron: "50 6 * * *"
+    - cron: "20 7 * * *"
+    - cron: "50 8 * * *"
   workflow_dispatch:
 
 permissions:
